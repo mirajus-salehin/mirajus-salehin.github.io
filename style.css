@@ -1,0 +1,61 @@
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress text {
+    fill: #fff;
+    text-anchor: middle;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+#main {
+    margin-left: 120px
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }

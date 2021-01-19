@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<title>Mirajus Salehin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<body class="w3-black">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=352976285503937&autoLogAppEvents=1"
+        nonce="43AGkAhS"></script>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT ME</p>
+        </a>
+        <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-microchip w3-xxlarge"></i>
+            <p>SKILLS</p>
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-code w3-xxlarge"></i>
+            <p>PROJECTS</p>
+        </a>
+        <a href="#awards" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-trophy w3-xxlarge"></i>
+            <p>AWARDS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT ME</p>
+        </a>
+        <a href="#sponsor" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-flash w3-xxlarge"></i>
+            <p>SPONSORED CONTENT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#skills" class="w3-bar-item w3-button">SKILLS</a>
+            <a href="#projects" class="w3-bar-item w3-button">PROJECTS</a>
+            <a href="#awards" class="w3-bar-item w3-button">AWARDS</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h3 class="w3-hide-small w3-text-grey"> Hey I am</h3>
+            <h1 class="w3-jumbo">Mirajus Salehin</h1>
+            <h3>I <span class="autoType"></span></h3>
+            <img src="background.png" alt="boy" class="w3-image" width="992" height="1108">
+        </header>
+
+        <!--About me section-->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">About me</h2>
+            <hr class="w3-opacity" style="width: 200px;">
+            <p>
+                I am 21 years old studying B.Sc. in Agicultural Enginnering at Bangladesh Agricultural University. I am
+                a
+                programmer who is interested in different things. I am a formar programmer at <a
+                    href="https://www.jumbak.blogspot.com/">Jumbak</a>. I was also part of Amazon Open Dev Group. I can
+                build clean UI for web and android
+                applications. My field of expertise include Application(mobile/web),responsive design, a small pinch of
+                Data visualization
+                and machine learning. Experiences also include anti-disciplinary team collaboration. I have also
+                conducted a reasearch on COVID-19 with machine learning.
+            </p>
+            <p>
+                Lastly I've also participated different hack-a-thons and programming contests. I have also participated
+                in Google Dev Fest two times.
+            </p>
+        </div>
+
+        <!--Skill section-->
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+            <h3 class="w3-text-light-grey">My skills</h3>
+            <hr class="w3-opacity" style="width: 200px;">
+            <div class="w3-row">
+                <div class="w3-col s4 w3-center">
+                    <h2>C++</h2>
+                    <svg class="radial-progress w3-center" data-percentage="60" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60%</text>
+                    </svg>
+                </div>
+                <div class="w3-col s4 w3-center">
+                    <h2>Python</h2>
+                    <svg class="radial-progress w3-center" data-percentage="75" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                    </svg>
+                </div>
+                <div class="w3-col s4 w3-center">
+                    <h2>JS</h2>
+                    <svg class="radial-progress w3-center" data-percentage="82" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">82%</text>
+                    </svg>
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col s4 w3-center">
+                        <h2>p5</h2>
+                        <svg class="radial-progress w3-center" data-percentage="80" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35"
+                                style="stroke-dashoffset: 39.58406743523136;">
+                            </circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                        </svg>
+                    </div>
+                    <div class="w3-col s4 w3-center">
+                        <h2>Java</h2>
+                        <svg class="radial-progress w3-center" data-percentage="50" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35"
+                                style="stroke-dashoffset: 39.58406743523136;">
+                            </circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
+                        </svg>
+                    </div>
+                    <div class="w3-col s4 w3-center">
+                        <h2>Qt</h2>
+                        <svg class="radial-progress w3-center" data-percentage="82" viewBox="0 0 80 80">
+                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                            <circle class="complete" cx="40" cy="40" r="35"
+                                style="stroke-dashoffset: 39.58406743523136;">
+                            </circle>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60%</text>
+                        </svg>
+                    </div>
+                </div>
+                <script src="index.js"></script>
+
+                <!--projects section-->
+                <div w3-content w3-justify w3-text-grey w3-padding-64" id="projects">
+                    <h3 class="w3-text-light-grey">Projects</h3>
+                    <hr class="w3-opacity" style="width: 200px;">
+                    <div class="w3-bar w3-black">
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="openProjects(event,'COVIDashBD')">COVIDashBD</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="openProjects(event,'Agro monitoring dashboard')">Agro monitoring dashboard</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="openProjects(event,'FacebookAuto')">FacebookAuto</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="openProjects(event,'Elegent-Conky-Theme')">Elegent-Conky-Theme</button>
+                    </div>
+
+                    <div id="COVIDashBD" class="w3-container prj">
+                        <h2>COVIDashBD</h2>
+                        <p>This project is a part of a ongoing research on predicting the future of COVID-19 in
+                            Bangladesh. This dashboard shows the the confirmed cases of COVID-19 in different districts
+                            from 15 April 2020.
+                        </p>
+                        <p>
+                            Know more about this project <a
+                                href="https://github.com/mirajus-salehin/COVIDashBD">here</a>
+                        </p>
+                    </div>
+
+                    <div id="Agro monitoring dashboard" class="w3-container prj" style="display:none">
+                        <h2>Agro monitoring dashboard</h2>
+                        <p>Agro Monitoring Dashboard is a software that can help the farmers to track many parameters of
+                            a their farms like soil temparature,humidty,pH. This software can also implemented for farm
+                            automation.
+                        </p>
+                        <p>Know more about the project <a
+                                href="https://github.com/mirajus-salehin/Agro-Monitoring-Dashboard">here</a></p>
+                    </div>
+
+                    <div id="FacebookAuto" class="w3-container prj" style="display:none">
+                        <h2>FacebookAuto</h2>
+                        <p>FacebookAuto is a collection of scripts to do automate different tasks in Facebook.</p>
+                        <p>This project can help you to</p>
+                        <ul>
+                            <li>Add all friends to your group.</li>
+                            <li>Send a same messege to all your friends.This helps to invite your friends in many
+                                occasions like birthday party.</li>
+                            <li>Report a fake account with multiple accounts.</li>
+                        </ul>
+                        <p>Know more about the project <a
+                                href="https://github.com/mirajus-salehin/FacebookAuto">here</a></p>
+                    </div>
+                    <div id="Elegent-Conky-Theme" class="w3-container prj" style="display:none">
+                        <h2>Elegent-Conky-Theme</h2>
+                        <p>Elegent-Conky-Theme is a customized theme for <a
+                                href="https://en.wikipedia.org/wiki/Conky_(software)">Conky</a>,a system monitor
+                            software for the X Window System.</p>
+                        <p>Know more about the project <a
+                                href="https://github.com/mirajus-salehin/Elegent-Conky-Theme">here</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--awards section-->
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="awards">
+                <h2 class="w3-text-light-grey">Awards</h2>
+                <hr class="w3-opacity" style="width: 200px;">
+                <ul>
+                    <li>95<sup>th</sup> (world ranking) in Sololearn 2016</li>
+                    <li>6<sup>th</sup> National Mathematics Olympiad (DIvisional level) 2012</li>
+                    <li>Winner at various Science Fair in College level</li>
+                </ul>
+            </div>
+
+            <!--Contect me section-->
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="contact">
+                <h2 class="w3-text-light-grey">Contact me</h2>
+                <hr class="w3-opacity" style="width: 200px;">
+                <p>
+                    <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                    Rangpur,Bangladesh
+                </p>
+                <p>
+                    <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> +8801785356169
+                </p>
+                <p>
+                    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                    mirajussalehin@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a
+                        href="www.facebook.com/mirajussalehin">mirajussalehin</a>
+                </p>
+                <p>
+                    <i class="fa fa-twitter fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a
+                        href="https://twitter.com/mirajus_salehin">sssayem</a>
+                </p>
+                <p>
+                    <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a
+                        href="https://github.com/mirajus-salehin">mirajus-salehin</a>
+                </p>
+            </div>
+
+
+
+
+            <!-- END PAGE CONTENT -->
+        </div>
+</body>
+
+</html>
