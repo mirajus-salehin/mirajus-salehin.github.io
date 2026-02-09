@@ -2,6 +2,7 @@ export function articlesData() {
   return {
     articles: [],
     showAll: false,
+    limit:4,
 
     async loadArticles() {
       try {
@@ -31,18 +32,24 @@ export function parallaxSlider() {
     ],
     active: 0,
     offsetY: 0,
-    interval: null,
+    parallaxEnabled: true,
+    sliderInterval: null,
 
     init() {
-      this.interval = setInterval(() => {
+      // Disable parallax on touch devices / small screens
+      this.parallaxEnabled = window.matchMedia('(min-width: 768px)').matches;
+
+      // Auto slide
+      this.sliderInterval = setInterval(() => {
         this.active = (this.active + 1) % this.images.length;
-      }, 4000);
+      }, 5000);
     },
 
-    onScroll() {
+    handleScroll() {
+      if (!this.parallaxEnabled) return;
       this.offsetY = window.scrollY * 0.25;
     }
-  }
+  };
 }
 export function imageSlider() {
   return {

@@ -24,16 +24,14 @@
     content="AI-driven solutions for precision agriculture, computer vision, and smart farming. Research, projects, and publications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mirajus-salehin.github.io" />
-  <meta property="og:image"
-    content="https://github.com/mirajus-salehin/mirajus-salehin.github.io/blob/master/public/mirazus-salehin.png" />
+  <meta property="og:image" content="/mirazus-salehin.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mirazus Salehin | AI & Precision Agriculture Researcher" />
   <meta name="twitter:description"
     content="Exploring AI, UAV imagery, and smart agriculture through research and real-world systems." />
-  <meta name="twitter:image"
-    content="https://github.com/mirajus-salehin/mirajus-salehin.github.io/blob/master/public/mirazus-salehin.png" />
+  <meta name="twitter:image" content="/mirazus-salehin.png" />
 
   <link href="/src/style.css" rel="stylesheet">
   <script src="/src/main.js" type="module"></script>
@@ -171,64 +169,80 @@
 
 
   <!-- Parallax Section -->
-  <section x-data="parallaxSlider()" x-init="init()" @scroll.window="onScroll"
-    class="relative w-screen h-screen overflow-hidden">
+  <section x-data="parallaxSlider()" x-init="init()" @scroll.window="handleScroll"
+    class="relative w-screen h-[100svh] overflow-hidden">
 
     <!-- Image Track -->
-    <div class="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+    <div class="absolute inset-0 flex transition-transform duration-700 ease-in-out"
       :style="`transform: translateX(-${active * 100}vw);`">
+
       <template x-for="(img, index) in images" :key="index">
-        <div class="relative w-screen h-screen shrink-0">
-          <img :src="img" class="absolute inset-0 w-full h-full object-cover"
-            :style="`transform: translateY(${offsetY}px);`">
+        <div class="relative w-screen h-[100svh] shrink-0 overflow-hidden">
+          <img :src="img" class="absolute inset-0 w-full h-full object-cover will-change-transform" :style="parallaxEnabled
+            ? `transform: translateY(${offsetY}px);`
+            : 'transform: translateY(0);'">
         </div>
       </template>
     </div>
 
     <!-- TEXT OVER IMAGES -->
-    <div class="absolute inset-0 z-10 flex items-center justify-center px-6">
+    <div class="absolute inset-0 z-10 flex items-center justify-center px-6 pointer-events-none">
       <div class="text-center">
-        <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-xl">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-white drop-shadow-xl">
           AI × Computer Vision × Agriculture
         </h1>
-        <p class="mt-4 text-lg md:text-2xl text-white drop-shadow-lg">
+        <p class="mt-4 text-base sm:text-lg md:text-2xl text-white drop-shadow-lg">
           Intelligent systems from data to deployment
         </p>
       </div>
     </div>
   </section>
-  <!--PUBLISHED ARTICLES-->
-  <section id="articles">
-    <div class="container px-6 py-10 mx-auto">
-      <div x-data="articlesData()" x-init="loadArticles()" class="mx-auto p-6">
-        <h1 class="text-2xl font-semibold text-center capitalize lg:text-3xl ">Published Articles
-        </h1>
 
-        <div class="p-4">
+
+  <!-- PUBLISHED ARTICLES -->
+  <section id="articles" class="scroll-mt-20">
+    <div class="container px-6 py-10 mx-auto">
+      <div x-data="articlesData()" x-init="loadArticles()" class="mx-auto max-w-6xl p-6">
+
+        <h2 class="text-2xl lg:text-3xl font-semibold text-center capitalize">
+          Published Articles
+        </h2>
+
+        <div class="mt-6 space-y-4">
           <template x-for="(article, index) in visibleArticles" :key="index">
-            <div class="p-2 border-b pb-3 last:border-b-0">
-              <h3 class="font-semibold" x-text="article.title"></h3>
-              <p class="text-gray-600">
-                DOI: <a x-bind:href="article.doi" target="_blank"><span x-text="article.doi"></span> </a>
+            <article class="pb-3 border-b last:border-b-0">
+              <h3 class="font-semibold text-lg" x-text="article.title"></h3>
+
+              <p class="text-sm text-gray-600">
+                DOI:
+                <a :href="article.doi" target="_blank" rel="noopener noreferrer"
+                  class="text-blue-600 hover:underline break-all" x-text="article.doi">
+                </a>
               </p>
-              <p class="text-gray-600">
-                <span x-text="article.publisher"></span> ·
-                <span x-text="article.date"></span>
+
+              <p class="text-sm text-gray-500">
+                <span x-text="article.publisher"></span>
+                ·
+                <time x-text="article.date"></time>
               </p>
-            </div>
+            </article>
           </template>
         </div>
 
         <!-- Show More / Less -->
-        <div class="mt-4 text-center">
-          <button x-show="articles.length > 3" @click="toggleShow()"
+        <div class="mt-6 text-center">
+          <button x-show="articles.length > limit" @click="toggleShow"
             class="text-blue-600 text-sm font-medium hover:underline transition">
             <span x-text="showAll ? 'Show less' : 'Show more'"></span>
           </button>
         </div>
+
       </div>
     </div>
   </section>
+
+
+
   <div x-data="scrollHandler()" x-on:scroll.window="onScroll">
     <section class="body-font" x-data="counterSection()" x-ref="counterSection" x-init="observe()">
       <h1 class="text-2xl lg:text-3xl font-semibold text-center mb-10">
@@ -249,17 +263,6 @@
       </div>
     </section>
   </div>
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-12 mx-auto">
-      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Want to know more about my works?
-        </h1>
-        <button
-          class="flex-shrink-0 text-white bg-blue-700 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Click
-          here</button>
-      </div>
-    </div>
-  </section>
 
   <!--PROFESSIONAL EXPERIENCES-->
   <section class="bg-white">
