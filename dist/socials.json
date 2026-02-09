@@ -1,0 +1,46 @@
+{
+  "socials": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/mirajus.salehinsayem",
+      "hover": "hover:bg-blue-600",
+      "iconColor": "text-blue-600",
+      "icon": "/icons/facebook.svg"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/mirajus.salehinsayem/",
+      "hover": "hover:bg-gradient-to-tr hover:from-pink-500 hover:to-yellow-500",
+      "iconColor": "text-pink-500",
+      "icon": "/icons/instagram.svg"
+    },
+    {
+      "name": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/M-Mirazus-Salehin",
+      "hover": "hover:bg-green-600",
+      "iconColor": "text-green-600",
+      "icon": "/icons/researchgate.svg"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mirazus-salehin/",
+      "hover": "hover:bg-blue-700",
+      "iconColor": "text-blue-700",
+      "icon": "/icons/linkedin.svg"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/mirajus-salehin",
+      "hover": "hover:bg-gray-900",
+      "iconColor": "text-gray-800",
+      "icon": "/icons/github.svg"
+    },
+    {
+      "name": "ORCID",
+      "url": "https://orcid.org/0000-0002-8852-9245",
+      "hover": "hover:bg-green-700",
+      "iconColor": "text-green-700",
+      "icon": "/icons/orcid.svg"
+    }
+  ]
+}
