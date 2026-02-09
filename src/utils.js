@@ -1,4 +1,4 @@
-function articlesData() {
+export function articlesData() {
   return {
     articles: [],
     showAll: false,
@@ -22,7 +22,7 @@ function articlesData() {
     }
   }
 }
-function parallaxSlider() {
+export function parallaxSlider() {
   return {
     images: [
       'https://images.unsplash.com/photo-1501004318641-b39e6451bec6',
@@ -44,7 +44,7 @@ function parallaxSlider() {
     }
   }
 }
-function imageSlider() {
+export function imageSlider() {
   return {
     images: [
       '/IMG-20250220-WA0012.jpg',
@@ -68,7 +68,7 @@ function imageSlider() {
   }
 }
 
-function counterSection() {
+export function counterSection() {
   return {
     started: false,
     counters: [
@@ -112,7 +112,7 @@ function counterSection() {
   }
 }
 
-function socialsLoader() {
+export function socialsLoader() {
   return {
     socials: [],
 
@@ -128,6 +128,24 @@ function socialsLoader() {
           return { ...item, svg }
         })
       )
+    }
+  }
+}
+
+window.scrollHandler = function () {
+  return {
+    lastScroll: 0,
+
+    onScroll() {
+      const current = window.scrollY
+
+      if (current > this.lastScroll) {
+        // scrolling down
+      } else {
+        // scrolling up
+      }
+
+      this.lastScroll = current
     }
   }
 }

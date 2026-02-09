@@ -24,14 +24,16 @@
     content="AI-driven solutions for precision agriculture, computer vision, and smart farming. Research, projects, and publications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mirajus-salehin.github.io" />
-  <meta property="og:image" content="https://github.com/mirajus-salehin/mirajus-salehin.github.io/blob/master/public/mirazus-salehin.png" />
+  <meta property="og:image"
+    content="https://github.com/mirajus-salehin/mirajus-salehin.github.io/blob/master/public/mirazus-salehin.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mirazus Salehin | AI & Precision Agriculture Researcher" />
   <meta name="twitter:description"
     content="Exploring AI, UAV imagery, and smart agriculture through research and real-world systems." />
-  <meta name="twitter:image" content="https://github.com/mirajus-salehin/mirajus-salehin.github.io/blob/master/public/mirazus-salehin.png" />
+  <meta name="twitter:image"
+    content="https://github.com/mirajus-salehin/mirajus-salehin.github.io/blob/master/public/mirazus-salehin.png" />
 
   <link href="/src/style.css" rel="stylesheet">
   <script src="/src/main.js" type="module"></script>
@@ -227,26 +229,26 @@
       </div>
     </div>
   </section>
+  <div x-data="scrollHandler()" x-on:scroll.window="onScroll">
+    <section class="body-font" x-data="counterSection()" x-ref="counterSection" x-init="observe()">
+      <h1 class="text-2xl lg:text-3xl font-semibold text-center mb-10">
+        My scientific journey till now...
+      </h1>
 
-  <section class="body-font" x-data="counterSection()" x-ref="counterSection" x-init="observe()">
-    <h1 class="text-2xl lg:text-3xl font-semibold text-center mb-10">
-      My scientific journey till now...
-    </h1>
+      <div class="container px-5 py-12 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
 
-    <div class="container px-5 py-12 mx-auto">
-      <div class="flex flex-wrap -m-4 text-center">
+          <template x-for="item in counters" :key="item.label">
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" x-text="item.current"></h2>
+              <p class="leading-relaxed" x-text="item.label"></p>
+            </div>
+          </template>
 
-        <template x-for="item in counters" :key="item.label">
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900" x-text="item.current"></h2>
-            <p class="leading-relaxed" x-text="item.label"></p>
-          </div>
-        </template>
-
+        </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-12 mx-auto">
       <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
@@ -458,6 +460,6 @@
   </footer>
 
 </body>
-<script src="src/utils.js"></script>
+<script src="src/utils.js" type="module"></script>
 
 </html>
