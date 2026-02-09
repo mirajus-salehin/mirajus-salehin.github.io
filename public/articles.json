@@ -1,0 +1,48 @@
+{
+  "publishedArticles": {
+    "articles": [
+      {
+        "title": "Prediction of sugar content in Java Plum using SW-NIR spectroscopy with CNN-LSTM based hybrid deep learning model",
+        "doi": "https://doi.org/10.1016/j.meafoo.2025.100246",
+        "publisher": "Measurement: Food",
+        "date": "2025"
+      },
+      {
+        "title": "Rapid Assessment of Fruits and Vegetables Quality Using Spectroscopy and Imaging Techniques: Recent Advances and Perspectives",
+        "doi": "https://doi.org/10.1007/s12393-025-09424-7",
+        "publisher": "Food Engineering Reviews",
+        "date": "2025-08-22"
+      },
+      {
+        "title":"Development of automated real-time mango grader using machine vision technique",
+        "doi":"https://doi.org/10.1007/s44279-025-00281-w",
+        "publisher":"Discover Agriculture",
+        "date":"2025-07-10"
+      },
+      {
+        "title":"Prediction of mango quality during ripening stage using MQ-based electronic nose and multiple linear regression",
+        "doi":"https://doi.org/10.1016/j.atech.2024.100558",
+        "publisher":"Smart Agricultural Technology",
+        "date":"2024-12"
+      },
+      {
+        "title":"Paddy seed viability prediction based on feature fusion of color and hyperspectral image with multivariate analysis",
+        "doi":"https://doi.org/10.1016/j.heliyon.2024.e36999",
+        "publisher":"Heliyon",
+        "date":"2024-09"
+      },
+      {
+        "title":"Assessment of paddy leaves disease severity level using image processing technique",
+        "doi":"https://doi.org/10.1016/j.atech.2024.100410",
+        "publisher":"Smart Agricultural Technology",
+        "date":"2024-03"
+      },
+      {
+        "title":"Prediction of Epidemics Trend of COVID-19 in Bangladesh",
+        "doi":"https://doi.org/10.3389/fpubh.2020.559437",
+        "publisher":"Frontiers in Public Health",
+        "date":"2020-11-30"
+      }
+    ]
+  }
+}

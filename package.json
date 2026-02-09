@@ -1,0 +1,20 @@
+{
+  "name": "mirajus-salehin.github.io",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@alpinejs/intersect": "^3.15.8",
+    "@tailwindcss/vite": "^4.1.18",
+    "alpinejs": "^3.15.8",
+    "tailwindcss": "^4.1.18"
+  }
+}
