@@ -82,7 +82,7 @@ export function counterSection() {
       { label: 'Published articles', target: 7, current: 0 },
       { label: 'Conference proceedings', target: 8, current: 0 },
       { label: 'Funded projects', target: 5, current: 0 },
-      { label: 'Citations', target: 53, current: 0 },
+      { label: 'Citations', target: 72, current: 0 },
     ],
 
     observe() {
